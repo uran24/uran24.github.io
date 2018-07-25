@@ -30,6 +30,8 @@ html, body {
 	
 	background-color: #1D2432;
 	height: 100vh;
+	text-align: center;
+	padding: 20px;
 }
 
 .flexible-image {
