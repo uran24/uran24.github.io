@@ -35,3 +35,10 @@ html, body {
 .flexible-image {
 	max-width: 100%
 }
+
+@media screen and (max-width: 500px){
+	#main, #sidebar{
+		float: none;
+		width: 100%;
+	}
+}
