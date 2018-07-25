@@ -25,3 +25,7 @@ html, body {
 	background-color: #1D2432;
 	height: 100vh;
 }
+
+.flexible-image {
+	max-width: 100%
+}
