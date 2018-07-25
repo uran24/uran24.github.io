@@ -4,6 +4,10 @@ html, body {
 	color: white;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 #wrapper {
 	width: 100%;
 	max-width: 1100px;
@@ -16,6 +20,8 @@ html, body {
 	
 	background-color: #FFA500;
 	height: 100vh;
+	padding: 20px;
+	color: #333;
 }
 
 #sidebar {
