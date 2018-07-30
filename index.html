@@ -1,29 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Мой тестовый сайт</title>
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width-device-width">
+	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no"">
+	<meta http-equv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- файл стилей пользователя должен быть самым последним -->
+	<link rel="stylesheet" href="css/main.css">
+	<title>Настроение</title>
+	  <script id="quotes_json" type="application/json">
+		[
+		  {
+			"phrase": "Кукурузные хлопья - теперь без асбеста!",
+			"signature": "©Неизвестный маркетолог"
+		  },
+		  {
+			"phrase": "Собираюсь жить вечно, пока всё идёт нормально"
+		  },
+		  {
+			"phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
+		  },
+		  {
+			"phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
+		  }
+		]
+	  </script>
 </head>
 <body>
-<div id="wrapper">
-	<div id="sidebar">
-		<img src="img\cat_400x300.jpg" alt="this is a cat" class="flexible-image">
-	</div>
-	<div id="main">
-		Some text with <a href="#">link</a> inside.
-		<p>
-			Внимательно выбирайте информацию, которая будет показана или скрыта в зависимости от размера 
-			экрана. Не убирайте контент только потому, что не можете разместить его на экране. Потребности 
-			пользователей не зависят от его размера. Например, если вы уберете из прогноза погоды информацию о 
-			содержании пыльцы в воздухе, это может стать серьезной проблемой для аллергиков, решающих, стоит ли 
-			сегодня выходить из дома.
-		</p>
-	</div>
-	
-</div>
-
+	<header id="header" class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					Настроение
+				</div>
+				<div class="col-lg-5 ml-auto">
+					<nav>
+						<ul class="menu d-flex justify-content-center">
+							<li class="menu__item">
+								<a href="#">
+									Features
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">
+									Support
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">
+									Blog
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header id="features" class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 ml-auto">
+					<p class="joke_text d-flex justify-content-center">
+						<script>
+							var data = JSON.parse(document.getElementById('quotes_json').innerHTML)
+							var randomIndex = Math.floor(Math.random() * (4 - 0)) + 0;
+							document.write(data[randomIndex].phrase)
+						</script>
+					</p>
+					<p class="lead">
+					  <a href="https://uran24.github.io" class="btn btn-lg btn-primary">Еще одна шутка</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>	
 </body>
 </html>

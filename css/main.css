@@ -1,15 +1,45 @@
-Селектор {
-	Свойство: значение;
+/* Спецификация */
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	
 }
 
-.first {
-	color: red;
-	font-size: 60px;
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+	margin-top:10px;
+}
+
+.menu__item {
+	margin: 0 57px;
+}
+
+.menu__item a {
+	font-size: 22px;
+	font-weight: 700;
+	color: #A63600;
+}
+
+/* Первый раздел Экран */
+.header {
+	background: #60D5AC;
+	color: #A63600;
+	padding-top: 58px;
+	font-size: 50px;
+}
+
+
+.features {
+	color: black;
+	font-size: 50px;
 	font-family: Arial;
-}
-
-.second {
-	color: green;
-	font-size: 20px;
-	font-family: TimesNewRoman;
+	font-weight: bold;
+	background-image: url(../img/651074.jpg);
+	padding: 50px;
+	height: 100vh;
 }
